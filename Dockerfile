@@ -1,4 +1,7 @@
 FROM python:3.10-slim
-COPY app.py /app.py
-CMD ["python", "/app.py"]
-
+WORKDIR /app
+COPY requirements.txt .
+COPY app.py .
+RUN pip install --no-cache-dir -r requirements.txt
+EXPOSE 8501
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.enableCORS=false"]
