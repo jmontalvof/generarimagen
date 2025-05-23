@@ -1,0 +1,30 @@
+
+# Archivos temporales del sistema
+*.DS_Store
+*.Thumbs.db
+
+# Archivos de bloqueo de editores
+*.swp
+*.swo
+*.bak
+*~ 
+
+# Archivos generados por el sistema al abrir en Windows/macOS
+*Zone.Identifier
+
+# Logs y resultados temporales
+*.log
+*.tmp
+
+# Archivos zip y binarios
+*.zip
+*.tar
+*.gz
+*.exe
+*.dll
+
+# Entornos virtuales de Python
+venv/
+.env
+__pycache__/
+*.pyc
